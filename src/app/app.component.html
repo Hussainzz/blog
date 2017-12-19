@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+
+<div class="card">
+    <ng-container *ngFor="let post of data">
+
+      <h1>{{post.title}}</h1>
+
+      <p>Posted by :{{post.users.username}} </p>
+      <br/>
+      <p>{{post.desc}}</p>
+
+    </ng-container>
+
+</div>
